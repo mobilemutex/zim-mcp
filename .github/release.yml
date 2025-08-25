@@ -9,6 +9,7 @@ jobs:
   build-and-publish:
     name: "Build and publish release to pypi"
     runs-on: ubuntu-latest
+    environment: pypi
     steps:
       - uses: actions/checkout@v4
 
