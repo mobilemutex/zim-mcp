@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "zim-mcp": {
+      "command": "uvx",
+      "args": ["zim_mcp", "--transport", "stdio"],
+      "env": {
+        "LOG_LEVEL": "INFO",
+        "ZIM_FILES_DIRECTORY": "~/zim_files"
+      }
+    }
+  }
+}
+

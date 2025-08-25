@@ -1,0 +1,20 @@
+[project]
+name = "zim-mcp"
+version = "0.1.0"
+description = "MCP server providing offline search capabilities through ZIM files"
+readme = "README.md"
+authors = [
+    { name = "mobilemutex" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "libzim>=3.7.0",
+    "mcp[cli]==1.13.0",
+]
+
+[project.scripts]
+zim-mcp = "zim_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
